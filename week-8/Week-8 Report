@@ -1,0 +1,17 @@
+This week was developing the website using HTML 5, CSS and JavaScript.
+
+Code:
+Code is available in Docket/week-8/index.html
+Code is available in Docket/week-8/index.js
+Code is available in Docket/week-8/styles.css
+Code is available in Docket/week-8/sign-up.html
+
+Problems encountered:
+I have encountered problem with the GitHub, where I was getting an error message saying my origin/master and the master branch are diverged. I din't understand what it meant. I was also getting a status message regarding the .DS file of the week-8. 
+
+How I solved it:
+I then opened the terminal to see the Git Status using commands. After a lot of effort, I tried pausing my .DS file and merging the rest of the files of the week-8. The issue has then been resolved. 
+
+References:
+https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+https://medium.com/flawless-app-stories/useful-git-commands-for-everyday-use-e1a4de64037d
