@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="A smartest way to checklist and complete tasks">
+  <meta name="keywords" content="docket, checklist, smart checklist, easy checklist">
+  <meta name="author" content="Amulya Minumula">
+  <title>Docket | Welcome</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src='./index.js'></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1><span class="highlight">Docket</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="notifications.html">Notifications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="showcase">
+    <div class="container">
+      <h1>A smartest way to checklist and complete tasks</h1>
+      <p>You select - We create. You add - We remind </p>
+    </div>
+  </section>
+  <section id="Sign-up1" class='LoginSectionWrapper'>
+    <div class="container1 loginWrapper">
+      <form action="login.php" method = "post">
+        <input class="loginInput" type="text"placeholder="Login with username" name = "login_id">
+        <input type="password" class="loginInput"placeholder="Enter Password" name = "password">
+        <button type="submit" class="button_1">Submit</button>
+      </form>
+      <span class='orTxt'>Or</span>
+      <a class='signupTxt' href="sign-up.html">Sign-up To Docket</a>
+    </div>
+  </section>
+
+  <section id="boxes" class='boxWrapper'>
+    <div class="container-wrapper" onclick="showListofDockets(1)">
+      <img src="./img/logo_listofdockets.jpg">
+      <h3>List of Dockets</h3>
+      <p>Your tasks done easy! Explore the list of dockets, choose from the options, add to your checklist and
+        complete your tasks.</p>
+      <div class='listOfDockets'>
+        <h3>List of Dockets</h3>
+        <a href="taskchecklists.html">Task Checklists</a>
+        <a href="troubleshootchecklists.html">Troubleshoot Checklists</a>
+        <a href="disciplinechecklists.html">Discipline Checklists</a>
+        <a href="coordinationchecklists.html">Coordination Checklists</a>
+      </div>
+    </div>
+    <div class="container-wrapper" onclick="showListofDockets(2)">
+      <img src="./img/logo_populardockets.jpg">
+      <h3>Popular Dockets</h3>
+      <p>See what are the popular lists around the world of Docket and add them to your checklist.</p>
+      <div class='popularDockets'>
+        <h3>Popular List of Dockets</h3>
+        <a href='travelchecklist.html'>Travel</a>
+        <a href='backtoschoolshoppingchecklist.html'>Back-to-school Shopping</a>
+        <a href='weddingchecklist.html'>Wedding</a>
+        <a href='kitchencleaningchecklist.html'>Kitchen Cleaning</a>
+      </div>
+    </div>
+    <div class="container-wrapper" onclick="showListofDockets(3)">
+      <img src="./img/logo_yourchecklisst.jpg">
+      <h3>Your Checklists</h3>
+      <p>Let Docket do the work to remember & remind you. Just get the tasks done easy!</p>
+      <div class='myCheckList'>
+        <h3>Your Checklist</h3>
+        <a href='trekkingchecklist.html'>Trekking Checklist</a>
+      </div>
+    </div>
+  </section>
+  <footer class='footerWrapper'>
+    <p>Docket, Copyright &copy; 2018</p>
+  </footer>
+</body>
+
+</html>
