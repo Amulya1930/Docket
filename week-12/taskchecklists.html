@@ -1,5 +1,5 @@
 <html>
-
+<link rel="stylesheet" href="./css/tcstyle.css">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
@@ -26,17 +26,16 @@
     </div>
   </header>
   <div class='bgImg'></div>
-  <div class='myCheckList listOfDockets'>
+  <p class='myCheckList listOfDockets'>
     <h3>Task Checklist</h3>
-    <p>Task checklists take the form of a how-to list. They outline a procedure step-by-step, listing instructions that
-      must be followed in order to complete the procedure</p>
+    
     <input type="text" id="taskCheckList" class='inputListDocket' onkeyup="searchList()" placeholder="Search" title="Type in a name">
     <ul id="taskUlWrapper">
       <li><a href='https://www.uml.edu/grad/process/forms.aspx' target="_blank">UMass Lowell Graduate Admission Forms</a></li>
       <li><a href='https://www.uml.edu/admissions/freshmen-applicants.aspx' target="_blank">UMass Lowell Undergraduate First-Year Applicants</a></li>
       <li><a href='https://www.uml.edu/thesolutioncenter/bill/health-insurance.aspx' target="_blank"> UMass Lowell Health Insurance Enroll/Waiver</a></li>
     </ul>
-  </div>
+  </p>
   <script>
     function searchList() {
       let input, filter, ul, li, a, i, txtValue;

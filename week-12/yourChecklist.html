@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="keywords" content="docket, checklist, smart checklist, easy checklist">
     <meta name="author" content="Amulya Minumula">
-    <title>Discipline Checklists</title>
+    <title>Your Checklist</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -25,22 +25,27 @@
         </div>
     </header>
 
-    <div class='myCheckList listOfDockets'>
+    <p class="myChecklist listOfDockets">
         <h3>Your Checklist / To-Do Lists</h3>
-        <input type="text" id="yourCheckList" class='inputListDocket' onkeyup="searchList()" placeholder="Search" title="Type in a name">
+        <input type="text" id="yourchecklist" class='inputListDocket' onkeyup="searchList()" placeholder="Search" title="Type in a name">
         <ul id="UlWrapper">
             <li><a href='trekkingchecklist.html'>Trekking Checklist</a></li>
+            <li><a href='travelchecklist.html'>Travel Checklist</a></li>
+            <li><a href='backtoschoolshoppingchecklist.html'>Back to school Checklist</a></li>
+            <li><a href='weddingchecklist.html'>Wedding Checklist</a></li>
+            <li><a href='kitchencleaningchecklist.html'>Kitchen cleaning Checklist</a></li>
         </ul>
+
         <div id="myDIV" class="header">
             <h2 style="margin:5px">My To Do List</h2>
             <input type="text" id="myInput" class='inputListDocket' placeholder="Add Title">
             <span onclick="newElement()" class="addBtn">Add</span>
         </div>
-    </div>
+</p>
     <script>
         function searchList() {
             let input, filter, ul, li, a, i, txtValue;
-            input = document.getElementById("yourCheckList");
+            input = document.getElementById("yourchecklist");
             filter = input.value.toUpperCase();
             ul = document.getElementById("UlWrapper");
             li = ul.getElementsByTagName("li");
@@ -112,5 +117,5 @@
             }
         }
     </script>
-
+</body>
 </html>
