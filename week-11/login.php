@@ -21,7 +21,7 @@ $result = mysqli_query($conn, $sql);
 if(mysqli_num_rows($result) ==1)
 {
 	echo "true";
-  header( 'Location: index.html' );
+  header( 'Location: index1.html' );
 	//echo file_get_contents("sample.html");
 }
 else
