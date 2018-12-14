@@ -1,12 +1,12 @@
 <html>
-
+<link rel="stylesheet" href="./css/ccstyle.css">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="A smartest way to checklist and complete tasks">
   <meta name="keywords" content="docket, checklist, smart checklist, easy checklist">
   <meta name="author" content="Amulya Minumula">
-  <title>Coordination Checklist</title>
+    <title>Coordination Checklist</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -25,5 +25,34 @@
       </nav>
     </div>
   </header>
+  <div class='bgImg'></div>
+  <p class='myCheckList listOfDockets'>
+    <h3>Coordination Checklists</h3>
 
-  </html>
+    <input type="text" id="taskCheckList" class='inputListDocket' onkeyup="searchList()" placeholder="Search" title="Type in a name">
+    <ul id="taskUlWrapper">
+      <li><a href='https://www.impactbnd.com/blog/sales-and-marketing-alignment-checklist-coordination-is-key'target="_blank">Sales and Marketing Alignment Checklist: Coordination is Key</a></li>
+      <li><a href='http://hughesmarino.com/resources/business-move-checklist/'target="_blank">Business Move Checklist</a></li>
+      <li><a href='https://www.skybrary.aero/index.php/Normal_Checklists_and_Crew_Coordination_(OGHFA_BN)' target="_blank">Normal Checklists and Crew Coordination (OGHFA BN)</a></li>
+    </ul>
+  </p>
+  <script>
+    function searchList() {
+      let input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("taskCheckList");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("taskUlWrapper");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</html>
